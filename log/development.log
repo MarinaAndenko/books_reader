@@ -1,0 +1,680 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 18:51:49 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 2494ms (Views: 2479.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b8985ba9f752b1b5e44480499a1262fc2a214c010ba4661c2163c3b54afe44fd.css" for 127.0.0.1 at 2016-04-19 18:51:51 +0300
+
+
+Started GET "/assets/application-aaccbf3d748b6bd0ae667bc1736d323d8aaea30d7c8aa43a126c85684d451975.js" for 127.0.0.1 at 2016-04-19 18:51:51 +0300
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 18:51:56 +0300
+Processing by BooksController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:51:56 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 56ms (Views: 36.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-04-19 18:52:16 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 18:52:19 +0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 18:52:20 +0300
+Processing by BooksController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:52:20 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 18:52:21 +0300
+Processing by BooksController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:52:21 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 18:52:21 +0300
+Processing by BooksController#drafts as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:52:21 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user_books" for 127.0.0.1 at 2016-04-19 18:52:22 +0300
+Processing by BooksController#user_books as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:52:22 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 18:52:23 +0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-04-19 18:52:36 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-04-19 18:53:27 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X7E3wErJJxGOZdnKlwylRPNEPRXD2BTZNaJRRiyunvGvU+Ao/JGP5v0yT9jI7W9DUXY815eR5Pue42k6JYJWEw==", "user"=>{"email"=>"user@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (57.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@m.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@m.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 568ms (Views: 42.7ms | ActiveRecord: 59.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:53:34 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-04-19 18:53:47 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L+2XxA5Sd3U7nDLpV8M+MpbXL3a1vMDzFByxxtYtzaPfD0AsuArfgkjLpPsIIvQ1NOUutOH1MNG/XYm63wEFQQ==", "user"=>{"email"=>"user@m.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "user@m.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2016-04-19 15:53:47.942450"], ["sign_in_count", 2], ["updated_at", "2016-04-19 15:53:47.943480"], ["id", 1]]
+  [1m[36m (8.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/user_books
+Completed 302 Found in 254ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/user_books" for 127.0.0.1 at 2016-04-19 18:53:47 +0300
+Processing by BooksController#user_books as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (54.8ms)[0m  [1mSELECT "books".* FROM "books" WHERE (user_id = 1)[0m
+  Rendered books/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 150ms (Views: 25.4ms | ActiveRecord: 56.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 18:53:50 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 18:53:51 +0300
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (1.1ms)[0m  SELECT "books".* FROM "books" WHERE (draft = false) AND (created_at >= '2016-04-12 15:53:51.962761')
+  Rendered books/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/user_books" for 127.0.0.1 at 2016-04-19 18:53:53 +0300
+Processing by BooksController#user_books as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books" WHERE (user_id = 1)
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 25.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2016-04-19 18:53:54 +0300
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGenre Load (13.9ms)[0m  SELECT "genres".* FROM "genres"
+  Rendered books/_form.html.erb (29.7ms)
+  Rendered books/new.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 258ms (Views: 42.5ms | ActiveRecord: 17.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2016-04-19 18:54:17 +0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jtxvd6MPaYN+xGhPx8pI1JOqgV6kXh+zfhQtDrqF7LyWVSGdLqaaoLII3+mAyWsWzmPP5v+ejOHj/iQVA3YJ7w==", "book"=>{"name"=>"sdbsd", "author"=>"bsdbs", "image"=>#<ActionDispatch::Http::UploadedFile:0x007feb6d341588 @tempfile=#<Tempfile:/tmp/RackMultipart20160419-2995-1sicybw.jpg>, @original_filename="The-Hunger-Games.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"The-Hunger-Games.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"gewwe", "draft"=>"0"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mBook Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE "books"."name" = 'sdbsd' LIMIT 1[0m
+  [1m[35mSQL (29.4ms)[0m  INSERT INTO "books" ("name", "author", "image", "description", "draft", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["name", "sdbsd"], ["author", "bsdbs"], ["image", "The-Hunger-Games.jpg"], ["description", "gewwe"], ["draft", "f"], ["user_id", 1], ["created_at", "2016-04-19 15:54:18.407288"], ["updated_at", "2016-04-19 15:54:18.407288"]]
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mGenre Load (0.3ms)[0m  SELECT "genres".* FROM "genres"
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 706ms (ActiveRecord: 39.6ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2016-04-19 18:54:18 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mGenre Load (21.1ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "book_genres" ON "genres"."id" = "book_genres"."genre_id" WHERE "book_genres"."book_id" = $1[0m  [["book_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 85ms (Views: 23.1ms | ActiveRecord: 23.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-04-19 18:54:22 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"24xL9klSHjE/Q5cH2kXh7v7Lnbz79tnqrxkUL4K9Z3TDBQUcxPvtEvOPIKGdRsIsowLTBKA2Srgy8x00O06CJw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 18:54:22 +0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 22:52:43 +0300
+
+PG::ConnectionBad (ВАЖНО:  база данных "books_db_development" не существует
+):
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+  [1m[36m (105.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (61.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGenres (20160414061058)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (82.7ms)[0m  [1mCREATE TABLE "genres" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160414061058"]]
+  [1m[36m (7.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBooks (20160414064027)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (72.4ms)[0m  [1mCREATE TABLE "books" ("id" serial primary key, "name" character varying, "author" character varying, "image" character varying, "description" text, "draft" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160414064027"]]
+  [1m[36m (9.9ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20160414065527)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (69.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (43.1ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (38.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (28.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_confirmation_token" ON "users"  ("confirmation_token")
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160414065527"]]
+  [1m[35m (18.8ms)[0m  COMMIT
+Migrating to CreateBookGenres (20160414093434)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (42.7ms)[0m  CREATE TABLE "book_genres" ("id" serial primary key, "book_id" integer, "genre_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (30.7ms)[0m  [1mCREATE  INDEX  "index_book_genres_on_book_id" ON "book_genres"  ("book_id")[0m
+  [1m[35m (38.7ms)[0m  CREATE  INDEX  "index_book_genres_on_genre_id" ON "book_genres"  ("genre_id")
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "book_genres" ADD CONSTRAINT "fk_rails_4a117802d7"
+FOREIGN KEY ("book_id")
+  REFERENCES "books" ("id")
+[0m
+  [1m[35m (2.6ms)[0m  ALTER TABLE "book_genres" ADD CONSTRAINT "fk_rails_ac5841e6a0"
+FOREIGN KEY ("genre_id")
+  REFERENCES "genres" ("id")
+
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160414093434"]]
+  [1m[35m (10.3ms)[0m  COMMIT
+Migrating to AddUserToBooks (20160414101906)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "books" ADD "user_id" integer
+  [1m[36m (40.1ms)[0m  [1mCREATE  INDEX  "index_books_on_user_id" ON "books"  ("user_id")[0m
+  [1m[35m (2.4ms)[0m  ALTER TABLE "books" ADD CONSTRAINT "fk_rails_bc582ddd02"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160414101906"]]
+  [1m[35m (11.0ms)[0m  COMMIT
+Migrating to AddRoleToUsers (20160417091548)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (204.2ms)[0m  ALTER TABLE "users" ADD "role" character varying DEFAULT 'user'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160417091548"]]
+  [1m[35m (10.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'book_genres'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (6.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'books'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'genres'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 22:57:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 525ms (Views: 488.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b8985ba9f752b1b5e44480499a1262fc2a214c010ba4661c2163c3b54afe44fd.css" for 127.0.0.1 at 2016-04-19 22:57:27 +0300
+
+
+Started GET "/assets/application-aaccbf3d748b6bd0ae667bc1736d323d8aaea30d7c8aa43a126c85684d451975.js" for 127.0.0.1 at 2016-04-19 22:57:27 +0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 22:57:31 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 73ms (Views: 54.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-04-19 22:57:35 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-04-19 22:58:57 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ianI3zj0Xal6n91/C9ZGb7pi3Fs5wv9ISu4dClU5oulL2dXxseIELBzSsFpcqNP4TqYad/10/V01iBlcqlaczg==", "user"=>{"email"=>"user@m.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@m.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@m.com' LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "22fe90b9b67d220b897ce047041ca65f64841512af81b04c3c03f7b0cba4a9b8"]]
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["email", "user@m.com"], ["encrypted_password", "$2a$10$f8LpRBF/F1WDEc7QsilQ4eK78pvcFaCQWEO55YIIM9I31Ei8UnLy."], ["created_at", "2016-04-19 19:58:57.902122"], ["updated_at", "2016-04-19 19:58:57.902122"], ["confirmation_token", "V6ywHDojxqBPR4QyfG3v"], ["confirmation_sent_at", "2016-04-19 19:58:58.123774"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (8.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 311.9ms
+
+Sent mail to user@m.com (271.0ms)
+Date: Tue, 19 Apr 2016 22:58:58 +0300
+From: books@site.com
+Reply-To: books@site.com
+To: user@m.com
+Message-ID: <57168e0278cfb_f0d3faaccffd6909357b@marina-PC.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@m.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=V6ywHDojxqBPR4QyfG3v">Confirm my account</a></p>
+
+  [1m[36m (16.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1264ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 22:58:58 +0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=V6ywHDojxqBPR4QyfG3v" for 127.0.0.1 at 2016-04-19 22:59:04 +0300
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"V6ywHDojxqBPR4QyfG3v"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "V6ywHDojxqBPR4QyfG3v"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["confirmed_at", "2016-04-19 19:59:04.516790"], ["updated_at", "2016-04-19 19:59:04.517418"], ["id", 1]]
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 24ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-19 22:59:04 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-04-19 22:59:16 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b979HHXqZ4/jSL0kmo/qb2LhQxMDK4qga92wAoFS1/OtruAy/Pw+CoUF0AHN8X/4liWFP8ediLUUu7RUfj3p1A==", "user"=>{"email"=>"user@m.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "user@m.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2016-04-19 19:59:16.880005"], ["current_sign_in_at", "2016-04-19 19:59:16.880005"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2016-04-19 19:59:16.880975"], ["id", 1]]
+  [1m[36m (35.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 142ms (ActiveRecord: 36.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 22:59:16 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 22:59:25 +0300
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books" WHERE (draft = false) AND (created_at >= '2016-04-12 19:59:25.135073')
+  Rendered books/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 22.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 22:59:26 +0300
+Processing by BooksController#drafts as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (1.1ms)[0m  SELECT "books".* FROM "books" WHERE (draft = true && user_id = 1)
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (PG::UndefinedFunction: ОШИБКА:  оператор не существует: boolean && integer
+LINE 1: SELECT "books".* FROM "books" WHERE (draft = true && user_id...
+                                                          ^
+HINT:  Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+: SELECT "books".* FROM "books" WHERE (draft = true && user_id = 1)):
+    1: <% @books.each do |book| %>
+    2: <div class="panel panel-success">
+    3:   <div class="panel-heading">
+    4:     <h1 class="panel-title heading"><%= link_to book.name, book, class: "book-name" %></h1>
+  app/views/books/index.html.erb:1:in `_app_views_books_index_html_erb__2505732364965620980_70002666484480'
+  app/controllers/books_controller.rb:11:in `drafts'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.7ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 22:59:26 +0300
+Processing by BooksController#drafts as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.5ms)[0m  SELECT "books".* FROM "books" WHERE (draft = true && user_id = 1)
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (PG::UndefinedFunction: ОШИБКА:  оператор не существует: boolean && integer
+LINE 1: SELECT "books".* FROM "books" WHERE (draft = true && user_id...
+                                                          ^
+HINT:  Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+: SELECT "books".* FROM "books" WHERE (draft = true && user_id = 1)):
+    1: <% @books.each do |book| %>
+    2: <div class="panel panel-success">
+    3:   <div class="panel-heading">
+    4:     <h1 class="panel-title heading"><%= link_to book.name, book, class: "book-name" %></h1>
+  app/views/books/index.html.erb:1:in `_app_views_books_index_html_erb__2505732364965620980_70002810302880'
+  app/controllers/books_controller.rb:11:in `drafts'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.7ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 23:00:39 +0300
+Processing by BooksController#drafts as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.8ms)[0m  SELECT "books".* FROM "books" WHERE (draft = true AND user_id = 1)
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 49ms (Views: 19.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application-b8985ba9f752b1b5e44480499a1262fc2a214c010ba4661c2163c3b54afe44fd.css" for 127.0.0.1 at 2016-04-19 23:00:39 +0300
+
+
+Started GET "/assets/application-aaccbf3d748b6bd0ae667bc1736d323d8aaea30d7c8aa43a126c85684d451975.js" for 127.0.0.1 at 2016-04-19 23:00:39 +0300
+
+
+Started GET "/books/new" for 127.0.0.1 at 2016-04-19 23:00:42 +0300
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGenre Load (0.9ms)[0m  SELECT "genres".* FROM "genres"
+  Rendered books/_form.html.erb (23.0ms)
+  Rendered books/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 200ms (Views: 51.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 23:00:44 +0300
+Processing by BooksController#drafts as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books" WHERE (draft = true AND user_id = 1)
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/user_books" for 127.0.0.1 at 2016-04-19 23:00:45 +0300
+Processing by BooksController#user_books as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.9ms)[0m  SELECT "books".* FROM "books" WHERE (user_id = 1)
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 23:00:47 +0300
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE (draft = false) AND (created_at >= '2016-04-12 20:00:47.311054')
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 23:00:48 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 23:00:49 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 23:00:50 +0300
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE (draft = false) AND (created_at >= '2016-04-12 20:00:50.487274')
+  Rendered books/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/user_books" for 127.0.0.1 at 2016-04-19 23:00:51 +0300
+Processing by BooksController#user_books as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.9ms)[0m  SELECT "books".* FROM "books" WHERE (user_id = 1)
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 23:00:52 +0300
+Processing by BooksController#drafts as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE (draft = true AND user_id = 1)
+  Rendered books/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2016-04-19 23:00:52 +0300
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGenre Load (0.4ms)[0m  SELECT "genres".* FROM "genres"
+  Rendered books/_form.html.erb (6.6ms)
+  Rendered books/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2016-04-19 23:10:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1mSELECT "genres".* FROM "genres"[0m
+  Rendered books/_form.html.erb (33.4ms)
+  Rendered books/new.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 458ms (Views: 383.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application-b8985ba9f752b1b5e44480499a1262fc2a214c010ba4661c2163c3b54afe44fd.css" for 127.0.0.1 at 2016-04-19 23:10:54 +0300
+
+
+Started GET "/assets/application-aaccbf3d748b6bd0ae667bc1736d323d8aaea30d7c8aa43a126c85684d451975.js" for 127.0.0.1 at 2016-04-19 23:10:54 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 23:11:27 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-19 23:11:30 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2016-04-19 23:11:31 +0300
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.9ms)[0m  [1mSELECT "books".* FROM "books" WHERE (draft = false) AND (created_at >= '2016-04-12 20:11:31.922366')[0m
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/user_books" for 127.0.0.1 at 2016-04-19 23:11:33 +0300
+Processing by BooksController#user_books as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT "books".* FROM "books" WHERE (user_id = 1)[0m
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 24.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/drafts" for 127.0.0.1 at 2016-04-19 23:11:34 +0300
+Processing by BooksController#drafts as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT "books".* FROM "books" WHERE (draft = true AND user_id = 1)[0m
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 33.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2016-04-19 23:11:35 +0300
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mGenre Load (0.6ms)[0m  [1mSELECT "genres".* FROM "genres"[0m
+  Rendered books/_form.html.erb (9.6ms)
+  Rendered books/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 48ms (Views: 40.8ms | ActiveRecord: 1.0ms)

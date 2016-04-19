@@ -1,0 +1,9 @@
+<li id = "genre" class="list-group-item">
+	<div class= "genre">
+		<%= genre.name %>
+	</div> 
+	<div class= "block-delete">
+		<%= link_to 'Delete', genre, method: :delete, id: "genre-delete", class: "btn btn-danger btn-sm", remote: true %>
+	</div>
+	<br><br>
+</li>

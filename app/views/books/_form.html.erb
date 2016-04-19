@@ -1,0 +1,52 @@
+<div class = "field-center-book">
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= f.label :name, class: "points"  %><br>
+    <%= f.text_area :name, class: "form-control", rows: "2",placeholder: "Name of the book" %>
+  </div><br>
+  <div>
+    <%= f.label :author, class: "points"  %><br>
+    <%= f.text_area :author, class: "form-control", rows: "2",placeholder: "Name of the author" %>
+  </div><br>
+  <div>
+    <label class = "points" >Jenres:</label><br>
+    <% @genres.each do |genre| %>
+      <%= check_box_tag('genres-yes[]', genre.id, has_genre(@book, genre))%>
+      <%= genre.name %><br>
+    <% end %>
+  </div><br>
+  <div>
+    <label class = "points"> Upload the image of the book: </label>
+    <%= f.file_field :image, value: "Choose a file", class: "fileinput"  %>
+  </div>
+  <div class = "image-size" >
+    <div class = "image-field-ed">
+      <%= image_tag @book.image.url(:book), alt: "" %>
+    </div>
+    <% if @book.image.url %> 
+      <label>Delete photo:</label><%= check_box_tag("remove_image", true)%>
+    <% end %>
+  </div><br>
+  <div>
+    <%= f.label :description, class: "points"  %><br>
+    <%= f.text_area :description, class: "form-control", rows: "15", id: "comment", placeholder: "Share with others what your book is about..."  %>
+  </div><br>
+  <div>
+    <%= f.label :draft, class: "points"  %>
+    <%= f.check_box :draft %>
+  </div><br>
+  <div class="button-center" ><%= f.submit class: "btn btn-warning" %></div><br>
+<% end %>
+</div>

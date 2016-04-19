@@ -1,0 +1,10 @@
+<div class="field-center-book">
+<h2 class = "heading" >Jenres List</h2>
+	<ul id = "genre-list" class="list-group">
+	<% @genres.each do |genre| %>
+	  <%= render partial: "genres/genre", locals: {genre:genre} %>
+	<% end %>
+	</ul>
+	<br><br>
+	<%= render partial: "genres/form", locals: {genre:@genre} %>
+</div>

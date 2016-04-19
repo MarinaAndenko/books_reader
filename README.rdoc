@@ -1,0 +1,18 @@
+INFORMATION ABOUT DEVELOPMENT AND PRODUCTION OF THE APP
+
+1) Schema of db
+ App has 4 entities: users, books, genres and book_genres, which hold foreign keys of books and genres tables. Users and
+ books have one to many relation. Books and genres have many to many relation through book_genres.   
+
+2) Fuctional
+  Non-authorisated user has access only to home page and then he must log in or sign up. 
+  Authorisated user can look through all books which were created during last week and add own books. Also he can add book to drafts. While book is draft, anyone can not access it except the author. User can adit and delete only his own books. 
+  Adminisrator can edit and destroy any books except user drafts, which are not able to adminisrator too. Adminisrator can manage user roles and give privileges to other users to be an adminisrators. Also admin add new genres to the list of genres, which later available for users to select.
+
+3) Developmant 
+  During development MySql db was managed. Such gems as: devise, twitter-bootstrap-rails, mini-magick, carrierwave were used for realization of specific tasks. Ajax technology was used to add and delete genres by adminisrator
+  
+4) Production
+  During deployment on heroku db was changed to PostgreSql.
+  
+

@@ -1,0 +1,36 @@
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1 class="panel-title heading"><%= @book.name %></h1>
+    </div>
+    <div class="panel-body">
+      <div class="draft">
+        <%= "!Draft" if @book.draft? %>
+      </div>
+        <div class = "image-field">
+          <%= image_tag @book.image_url(:book), alt: "" %>
+        </div>
+        <div class="jenre-author">
+          <strong>Jenre:</strong>
+          <% @book_genres.each do |book_genre| %>
+            <span class="badge attributes"><%= book_genre.name %></span>
+          <% end %>
+          <br><br>
+          <strong>Author: </strong><%= @book.author %><br>
+        </div>
+        <br>
+        <div class = "description book-text" >
+          <%= @book.description %>
+        </div>
+    </div>
+    <div class="panel-footer text">
+    <% if @book.user == current_user || current_user.admin? %>
+      <div class="block-show">
+        <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-warning btn-sm" %>
+        <%= link_to 'Delete', @book, method: :delete, class: "btn btn-default btn-sm" %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+  <div>
+    <%= link_to 'Return to all books', books_path, class: "back-button btn btn-default active btn-sm" %>
+  </div>

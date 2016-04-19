@@ -1,0 +1,12 @@
+<div>
+	<%= form_for genre, remote: true do |f| %>
+	  <div>
+	    <%= f.text_area :name, id: "genre-field", class: "form-control", placeholder: "Enter the name...", rows: 1 %>
+	  </div>
+	  <br>
+	  <div class = "button-center" >
+	  	<%= f.submit "Add a genre", class: "btn btn-success btn-sm" %>
+	  </div>
+	<% end %>
+	<br><br>	
+</div>

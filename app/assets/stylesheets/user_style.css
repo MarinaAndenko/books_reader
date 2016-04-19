@@ -1,0 +1,151 @@
+.field
+{
+	position: absolute;
+	width: 94%;
+	left: 3%;
+	top: 13%;
+}
+.heading
+{
+	text-align: center;
+	font-size: 20pt;
+}
+.jenre-author
+{
+	font-size: 12pt;
+}
+.description
+{
+	font-size: 14pt;
+}
+.description-all
+{
+	font-size: 12pt;
+}
+.attributes
+{
+	background: #1e90ff !important;
+}
+a 
+{
+	text-decoration: none !important;
+}
+.book-name:hover
+{
+	background-color: transparent !important;
+	color: inherit;
+}
+.block-show 
+{
+	position: relative;
+	left: 91%;
+}
+.button-center
+{
+	text-align: center;
+}
+.btn
+{
+	color: white !important;
+}
+.btn-default
+{
+	color: black !important;
+}
+.field-center
+{
+	position: absolute;
+	width: 40%;
+	left: 30%;
+}
+.forgot
+{
+	position: relative;
+	float: right;
+}
+.forgot-text
+{
+	color: blue !important ;
+}
+.forgot-text:hover
+{
+	color: black !important ;
+	background-color: white !important;
+}
+.button-enter
+{
+	border-radius: 8px !important;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.button-main
+{
+	border-radius: 8px !important;
+}
+.current
+{
+    color: green !important;
+}
+.navbar-default
+{
+    background-color: #98fb98;
+}
+.navbar-default a:focus
+{
+    background-color: red;
+}
+.draft
+{
+	text-align: center;
+	color: red;
+	font-size: 12pt;
+}
+.attributes-index
+{
+	background: #32cd32 !important;
+}
+.field-center-book
+{
+	position: relative;
+	left: 10%;
+	width: 80%;
+}
+.points 
+{
+	font-size: 14pt;
+}
+.image-size 
+{
+	position: relative;
+	width: 50%;
+}
+.image-field
+{
+	position: relative;
+	float: right;
+}
+.book-text 
+{
+	position: relative;
+	width: 80%;
+}
+.color-table
+{
+	font-size: 14pt;
+}
+.button-save-role
+{
+	border-radius: 8px !important;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.genre
+{
+	position: relative;
+	float: left;
+}
+.block-delete
+{
+	position: relative;
+	float: right;
+}
