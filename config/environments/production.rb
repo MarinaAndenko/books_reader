@@ -27,7 +27,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   ###########################
-
+  Rails.application.routes.default_url_options[:host] = 'booksreader.herokuapp.com'
   #config.action_mailer.default_url_options[:host] = 'booksreader.herokuapp.com'
   #config.action_mailer.raise_delivery_errors = true
   #config.action_mailer.perform_deliveries = true
