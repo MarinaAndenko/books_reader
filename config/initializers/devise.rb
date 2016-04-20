@@ -1,7 +1,7 @@
 
 Devise.setup do |config|
   
-  config.mailer_sender = 'books@site.com'
+  config.mailer_sender = 'booksapplication100500@gmail.com'
 
   require 'devise/orm/active_record'
 
