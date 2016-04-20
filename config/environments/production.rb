@@ -36,9 +36,9 @@ Rails.application.configure do
     :address                  => 'smtp.gmail.com',
     :port                     => 587,
     :authentication           => 'plain',
-    :user_name                => ENV["booksapplication100500@gmail.com"],
-    :password                 => ENV["books100500"],
-    :domain                   => 'heroku.com',
+    :user_name                => "booksapplication100500@gmail.com",
+    :password                 => "books100500",
+    :domain                   => 'booksreader.heroku.com',
     :enable_starttls_auto     => true
   }  
 end
