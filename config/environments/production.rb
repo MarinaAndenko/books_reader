@@ -38,7 +38,7 @@ Rails.application.configure do
     :authentication           => 'plain',
     :user_name                => "booksapplication100500@gmail.com",
     :password                 => "books100500",
-    :domain                   => 'booksreader.heroku.com',
+    :domain                   => 'gmail.com',
     :enable_starttls_auto     => true
   }  
 end
